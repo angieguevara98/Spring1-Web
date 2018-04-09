@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Editar Laboratorios</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background: black">
+      <div class="container">
+        <img src="img/imagen3.jpg" width="120" height="90">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigatio">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="formulario.html">Página Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="errores.html">Reporte Errores</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="laboratorio.html">Reserva Laboratorios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index2.html">Cerrar Sesión</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+      <div class="container">
+    <form>
+  <div class="form-group">
+
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+    <label for="exampleInputEmail1">Sede</label>
+    <input type="text" class="form-control" name="placa" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Sede" value="Lima">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Laboratorio</label>
+    <input type="text" class="form-control" name="color" id="exampleInputPassword1" placeholder="Laboratorio" value="705">
+  </div>
+    <div class="form-group">
+    <label for="exampleInputPassword1">Horario</label>
+    <input type="text" class="form-control" name="color" id="exampleInputPassword1" placeholder="Horario" value="3-4:30">
+  </div>
+  <a href="laboratorio.html" class="btn btn-secondary">Enviar</a>
+  <a href="laboratorio.html" class="btn btn-danger">Cancelar</a>
+
+</form>
+    
+  </div>
+  </body>
+  </html>
